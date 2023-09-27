@@ -1,4 +1,125 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+/* golos-text-regular - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/golos-text-v4-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* golos-text-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/golos-text-v4-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* golos-text-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/golos-text-v4-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* golos-text-700 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Golos Text';
+    font-style: normal;
+    font-weight: 700;
+    src: url('../fonts/golos-text-v4-latin-700.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
 body {
-  font-family: "Golos Text";
+  height: 100%;
+  font-family: "Golos Text" !important;
+}
+a{
+    font-family: "Golos Text" !important;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+.header {
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding-top: 20px;
+    margin-bottom: 20px;
+    .logo {
+      width: 174px;
+    }
+    button {
+      border: none;
+      border-radius: 12px;
+      background: #f56e1e;
+      display: flex;
+      width: 180px;
+      height: 54px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 18px;
+      font-style: normal;
+      font-weight: 600;
+      color: #fcfcfc;
+    }
+    .search {
+      width: 708px;
+      height: 54px;
+      padding: 12px;
+      border-radius: 12px;
+      border: 1px solid  #a0a3bc;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      input {
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        outline: none;
+        border: none;
+      }
+    }
+    .user__id {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      font-family: "Golos Text" !important;
+      a {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16px;
+        color: #6E7191;
+        font-family: 'Golos Text' !important;
+       .fa-solid, .fa-regular{
+        font-size: 25px;
+        color:#6E7191 ;
+        
+       }
+      }
+    }
+  }
+
+}
+.komp{
+    font-weight: 700;
+    font-family: "Golos Text";
 }
